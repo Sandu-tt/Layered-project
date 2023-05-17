@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane1" prefHeight="717.0" prefWidth="1126.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.daycare.controller.AddChildFormController">
+   <children>
+      <AnchorPane prefHeight="717.0" prefWidth="193.0" style="-fx-background-color: #1A1F2E;">
+         <children>
+            <Label layoutX="18.0" layoutY="101.0" prefHeight="33.0" prefWidth="178.0" text="K I N D E R   G A R D E  N" textFill="#e4bebe">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="93.0" fitWidth="102.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="196.0" prefHeight="122.0" prefWidth="977.0" style="-fx-background-color: #329C6F;" text="                 E     M   P   L   O   Y   E   E              D   E   T  A   I   L    S               F  O  R  M" textFill="#f2eaea">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TableView layoutX="276.0" layoutY="262.0" prefHeight="375.0" prefWidth="654.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

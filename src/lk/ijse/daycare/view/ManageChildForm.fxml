@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="707.0" prefWidth="1203.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.daycare.controller.ManageChildFormController">
+   <children>
+      <AnchorPane fx:id="pane2" layoutY="-2.0" prefHeight="714.0" prefWidth="201.0" style="-fx-background-color: #1A1F2E;">
+         <children>
+            <Label layoutX="21.0" layoutY="110.0" prefHeight="33.0" prefWidth="178.0" text="K I N D E R   G A R D E  N" textFill="#e4bebe">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="96.0" fitWidth="104.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="985.0" layoutY="43.0" onAction="#btnAddCOnAction" prefHeight="40.0" prefWidth="144.0" style="-fx-background-color: #f87a7a;" text="Add Children" textFill="#320606">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="982.0" layoutY="99.0" onAction="#btnUpdateCOnAction" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #e8e11c;" text="Update Children" textFill="#545340">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="982.0" layoutY="167.0" onAction="#btnDeleteCOnAction" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #49e710;" text="Delete Children" textFill="#1c3911">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="215.0" fitWidth="370.0" layoutX="997.0" layoutY="498.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/hand.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="1079.0" layoutY="301.0" mnemonicParsing="false" onAction="#btnBackOnAction" style="-fx-background-color: #edb80e;" text="Back" />
+      <TableView fx:id="tblChildren" layoutX="213.0" layoutY="422.0" prefHeight="263.0" prefWidth="775.0">
+         <columns>
+            <TableColumn fx:id="colCID" prefWidth="80.00003051757812" text="Children ID" />
+            <TableColumn fx:id="colName" prefWidth="152.0" text=" NAME" />
+            <TableColumn fx:id="colDoB" prefWidth="75.0" text="DoB" />
+            <TableColumn fx:id="colAge" prefWidth="67.0" text="AGE" />
+            <TableColumn fx:id="colAddress" prefWidth="135.0" text="ADDRESS" />
+            <TableColumn fx:id="colContact" prefWidth="156.0" text=" CONTACT" />
+            <TableColumn fx:id="collView" prefWidth="108.0" text="VIEW" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="982.0" layoutY="234.0" onAction="#SelectallbtnOnAction" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #E0FBFC;" text="Search All">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="268.0" layoutY="154.0" onAction="#btnBackOnAction" prefHeight="51.0" prefWidth="160.0" text="  " />
+      <JFXButton layoutX="319.0" layoutY="165.0" onAction="#btnBackOnAction" prefHeight="51.0" prefWidth="160.0" text="  " />
+      <TextField fx:id="txtname" layoutX="329.0" layoutY="84.0" prefHeight="28.0" prefWidth="237.0" style="-fx-font-size: 19;" />
+      <Label layoutX="253.0" layoutY="105.0" style="-fx-font-size: 19;" text="Name" />
+      <Label layoutX="251.0" layoutY="35.0" style="-fx-font-size: 19;" text="CId" />
+      <TextField fx:id="txtcid" layoutX="329.0" layoutY="28.0" prefHeight="28.0" prefWidth="237.0" style="-fx-font-size: 19;" />
+      <Label layoutX="245.0" layoutY="153.0" style="-fx-font-size: 19;" text="Address" />
+      <TextField fx:id="txtAddress" layoutX="329.0" layoutY="145.0" style="-fx-font-size: 19;" />
+      <TextField fx:id="txtage" layoutX="708.0" layoutY="205.0" prefHeight="42.0" prefWidth="237.0" style="-fx-font-size: 19;" />
+      <TextField fx:id="txtcontact" layoutX="336.0" layoutY="266.0" style="-fx-font-size: 19;" />
+      <Label layoutX="259.0" layoutY="220.0" style="-fx-font-size: 19;" text="DOB" />
+      <Label layoutX="253.0" layoutY="273.0" style="-fx-font-size: 19;" text="Contact" />
+      <TextField fx:id="txtdob" layoutX="336.0" layoutY="205.0" style="-fx-font-size: 19;" />
+      <Label layoutX="622.0" layoutY="212.0" style="-fx-font-size: 19;" text="AGE" />
+   </children>
+</AnchorPane>

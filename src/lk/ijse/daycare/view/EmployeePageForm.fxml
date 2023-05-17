@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane1" prefHeight="577.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.daycare.controller.EmployeePageFormController">
+   <children>
+      <Pane layoutX="211.0" layoutY="-2.0" prefHeight="650.0" prefWidth="600.0" style="-fx-background-color: white;">
+         <children>
+            <JFXButton layoutX="415.0" layoutY="178.0" onAction="#savebtnOnAction" style="-fx-border-color: black; -fx-border-radius: 5;" text="Save" />
+            <TextField fx:id="txteno" layoutX="340.0" layoutY="39.0" prefHeight="42.0" prefWidth="237.0" style="-fx-font-size: 19;" />
+            <ComboBox fx:id="cmbEmp" layoutX="168.0" layoutY="121.0" onAction="#setEmpOnAction" prefWidth="150.0" />
+         </children>
+      </Pane>
+      <AnchorPane fx:id="pane2" layoutY="-6.0" prefHeight="656.0" prefWidth="205.0" style="-fx-background-color: #1A1F2E;">
+         <children>
+            <Label layoutX="33.0" layoutY="110.0" prefHeight="33.0" prefWidth="178.0" text="K I N D E R   G A R D E  N" textFill="#e4bebe">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="80.0" fitWidth="85.0" layoutX="14.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="14.0" layoutY="385.0" onAction="#btnEdetailsOnAction" prefHeight="31.0" prefWidth="184.0" style="-fx-background-color: #D9D9D9;" text="Employee Details" />
+            <JFXButton layoutX="14.0" layoutY="338.0" onAction="#btnEattendanceeOnAction" prefHeight="31.0" prefWidth="184.0" style="-fx-background-color: #D9D9D9;" text="Employee Attendence" />
+            <JFXButton layoutX="14.0" layoutY="431.0" onAction="#btnLogoutOnAction" prefHeight="31.0" prefWidth="184.0" style="-fx-background-color: #D9D9D9;" text="Log out" />
+            <ImageView fitHeight="124.0" fitWidth="128.0" layoutX="32.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/team.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="250.0" layoutY="105.0" prefHeight="45.0" prefWidth="134.0" style="-fx-font-size: 19;" text="E No" />
+      <Label layoutX="250.0" layoutY="169.0" prefHeight="45.0" prefWidth="134.0" style="-fx-font-size: 19;" text="E Name" />
+      <TextField fx:id="txtename" layoutX="368.0" layoutY="172.0" prefHeight="42.0" prefWidth="237.0" style="-fx-font-size: 19;" />
+      <TableView fx:id="tblEmployee" layoutX="234.0" layoutY="359.0" prefHeight="242.0" prefWidth="487.0">
+        <columns>
+          <TableColumn fx:id="coleno" prefWidth="75.0" text=" ENo" />
+          <TableColumn fx:id="colename" prefWidth="269.0" text="E Name" />
+            <TableColumn fx:id="colarrivaltime" prefWidth="142.0" text="Arrival  Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

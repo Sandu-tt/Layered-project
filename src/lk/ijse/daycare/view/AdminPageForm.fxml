@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="666.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.daycare.controller.AdminPageFormController">
+   <children>
+      <Pane layoutX="-6.0" layoutY="186.0" prefHeight="540.0" prefWidth="720.0" style="-fx-background-color: white;">
+         <children>
+            <JFXButton contentDisplay="TOP" layoutX="470.0" layoutY="73.0" onAction="#EmployeebtnOnAction" prefHeight="150.0" prefWidth="150.0" style="-fx-border-color: black; -fx-border-radius: 10;" text="Employee">
+               <graphic>
+                  <FontAwesomeIconView glyphName="GROUP" size="40" />
+               </graphic>
+               <font>
+                  <Font name="Consolas" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" layoutX="69.0" layoutY="262.0" onAction="#ReportsbtnOnAction" prefHeight="150.0" prefWidth="150.0" style="-fx-border-color: black; -fx-border-radius: 10;" text="Reports">
+               <graphic>
+                  <FontAwesomeIconView glyphName="CALENDAR" size="40" />
+               </graphic>
+               <font>
+                  <Font name="Consolas" size="24.0" />
+               </font>
+            </JFXButton>
+         </children></Pane>
+      <Pane prefHeight="200.0" prefWidth="720.0" style="-fx-background-color: #1A1F2E;">
+         <children>
+            <ImageView fitHeight="91.0" fitWidth="99.0" layoutX="63.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="21.0" layoutY="131.0" prefHeight="33.0" prefWidth="190.0" text="K I N D E R   G A R D E  N" textFill="#e4bebe">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton contentDisplay="TOP" layoutX="45.0" layoutY="281.0" onAction="#HomebtnOnAction" prefHeight="150.0" prefWidth="150.0" style="-fx-border-color: black; -fx-border-radius: 10;" text="Home">
+         <graphic>
+            <FontAwesomeIconView glyphName="HOME" size="40" />
+         </graphic>
+         <font>
+            <Font name="Consolas" size="24.0" />
+         </font></JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="262.0" layoutY="275.0" onAction="#ChildrenbtnOnAction" prefHeight="150.0" prefWidth="150.0" style="-fx-border-radius: 10; -fx-border-color: black;" text="Children">
+         <graphic>
+            <FontAwesomeIconView glyphName="CHILD" size="40" />
+         </graphic>
+         <font>
+            <Font name="Consolas" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="462.0" layoutY="460.0" onAction="#SalarybtnOnAction" prefHeight="150.0" prefWidth="150.0" style="-fx-border-color: black; -fx-border-radius: 10;" text="Salary">
+         <graphic>
+            <FontAwesomeIconView glyphName="MONEY" size="40" />
+         </graphic>
+         <font>
+            <Font name="Consolas" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="262.0" layoutY="460.0" onAction="#PaymentbtnOnAction" prefHeight="150.0" prefWidth="150.0" style="-fx-border-color: black; -fx-border-radius: 10;" text="Payments">
+         <graphic>
+            <FontAwesomeIconView glyphName="CREDIT_CARD" size="40" />
+         </graphic>
+         <font>
+            <Font name="Consolas" size="24.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

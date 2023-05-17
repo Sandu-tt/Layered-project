@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="616.0" prefWidth="988.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.daycare.controller.SalaryPageController">
+   <children>
+      <Label layoutX="284.0" layoutY="14.0" text="Employee Salary Payments">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEName" layoutX="590.0" layoutY="203.0" prefHeight="29.0" prefWidth="374.0" />
+      <ComboBox fx:id="cmbEID" layoutX="377.0" layoutY="203.0" onAction="#cmbAction" prefHeight="25.0" prefWidth="180.0" />
+      <TextField fx:id="txtSalaryID" layoutX="180.0" layoutY="203.0" prefHeight="29.0" prefWidth="167.0" />
+      <Label layoutX="180.0" layoutY="170.0" text="Salary ID" />
+      <Label layoutX="383.0" layoutY="170.0" text="Employee ID" />
+      <Label layoutX="583.0" layoutY="169.0" text="Employee Name" />
+      <TextField fx:id="txtAmount" layoutX="494.0" layoutY="277.0" prefHeight="29.0" prefWidth="374.0" />
+      <Label layoutX="467.0" layoutY="246.0" text="Amount" />
+      <JFXButton layoutX="886.0" layoutY="276.0" onAction="#saveOnAction" style="-fx-border-color: black; -fx-border-radius: 5;" text="Save" />
+      <TableView fx:id="tblSalary" layoutX="209.0" layoutY="330.0" prefHeight="272.0" prefWidth="762.0">
+        <columns>
+          <TableColumn fx:id="colSalID" prefWidth="96.0" text="Salary ID" />
+          <TableColumn fx:id="colEmpID" prefWidth="179.0" text="Employee ID" />
+            <TableColumn fx:id="colEmpName" prefWidth="289.0" text="Employee Name" />
+            <TableColumn fx:id="colAmount" prefWidth="197.0" text="Amount" />
+        </columns>
+      </TableView>
+      <Pane prefHeight="616.0" prefWidth="167.0" style="-fx-background-color: #1A1F2E;">
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="109.0" layoutX="17.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="7.0" layoutY="123.0" prefHeight="33.0" prefWidth="159.0" text="K I N D E R  G A R D E N" textFill="#e4bebe">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton layoutX="921.0" layoutY="44.0" onAction="#backbtnOnAction" style="-fx-border-color: black; -fx-border-radius: 5;" text="Back" />
+   </children>
+</AnchorPane>

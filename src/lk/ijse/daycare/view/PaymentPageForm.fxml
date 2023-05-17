@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="699.0" prefWidth="1191.0" style="-fx-background-color: #fefefe;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.daycare.controller.PaymentPageFormController">
+   <children>
+      <AnchorPane fx:id="pane2" layoutY="-1.0" prefHeight="700.0" prefWidth="226.0" style="-fx-background-color: #1A1F2E;">
+         <children>
+            <ImageView fitHeight="88.0" fitWidth="101.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="29.0" layoutY="110.0" prefHeight="33.0" prefWidth="190.0" text="K I N D E R   G A R D E  N" textFill="#e4bebe">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="429.0" layoutY="6.0" prefHeight="73.0" prefWidth="585.0" style="-fx-background-color: 99CF63;" text="  C H I L D R E N              P A Y M E N T          D E T A I L S">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="156.0" fitWidth="198.0" layoutX="981.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/credit-card.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtName" layoutX="373.0" layoutY="119.0" prefHeight="28.0" prefWidth="237.0" style="-fx-font-size: 19;" />
+      <Label layoutX="278.0" layoutY="126.0" style="-fx-font-size: 19;" text="Name" />
+      <TextField fx:id="txtPname" layoutX="822.0" layoutY="178.0" prefHeight="28.0" prefWidth="237.0" style="-fx-font-size: 19;" />
+      <Label layoutX="687.0" layoutY="185.0" prefHeight="28.0" prefWidth="135.0" style="-fx-font-size: 19;" text="ParentName" />
+      <TextField fx:id="txtPmid" layoutX="373.0" layoutY="185.0" prefHeight="28.0" prefWidth="237.0" style="-fx-font-size: 19;" />
+      <Label layoutX="278.0" layoutY="185.0" style="-fx-font-size: 19;" text="pmID" />
+      <Label layoutX="691.0" layoutY="126.0" prefHeight="28.0" prefWidth="61.0" style="-fx-font-size: 19;" text="CID" />
+      <TextField fx:id="txtAmount" layoutX="373.0" layoutY="252.0" prefHeight="28.0" prefWidth="237.0" style="-fx-font-size: 19;" />
+      <Label layoutX="278.0" layoutY="252.0" style="-fx-font-size: 19;" text="Amount" />
+      <JFXButton layoutX="941.0" layoutY="265.0" onAction="#btnSaveOnAction" prefHeight="31.0" prefWidth="173.0" style="-fx-background-color: #E0FBFC;" text="Save" />
+      <JFXButton layoutX="958.0" layoutY="42.0" onAction="#btnlogoutOnAction" prefHeight="31.0" prefWidth="173.0" style="-fx-background-color: #f87a7a;" text="Log out" />
+      <ComboBox fx:id="cmbcid" layoutX="822.0" layoutY="119.0" onAction="#cmbAction" prefHeight="42.0" prefWidth="237.0" />
+      <TableView fx:id="tblPayment" editable="true" layoutX="278.0" layoutY="366.0" prefHeight="250.0" prefWidth="864.0">
+        <columns>
+            <TableColumn fx:id="colpmID" prefWidth="69.0" text="pmID   " />
+            <TableColumn fx:id="colcid" prefWidth="129.0" text="cID" />
+          <TableColumn fx:id="colName" prefWidth="176.0" text="Name" />
+            <TableColumn fx:id="colamount" prefWidth="266.0" text="Term payment(Amount)" />
+            <TableColumn fx:id="colview" prefWidth="115.0" text="View" />
+            <TableColumn fx:id="coldelete" prefWidth="108.0" text="Delete" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

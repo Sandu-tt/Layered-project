@@ -1,0 +1,5 @@
+.txt-lbl{
+    -fx-font-weight: bold;
+    -fx-font-size: 30;
+    -fx-text-fill: blue;
+}

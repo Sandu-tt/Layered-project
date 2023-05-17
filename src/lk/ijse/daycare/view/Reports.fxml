@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="521.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.daycare.controller.ReportsController">
+   <children>
+      <Pane fx:id="pane2" prefHeight="521.0" prefWidth="167.0" style="-fx-background-color: #1A1F2E;">
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="109.0" layoutX="17.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="7.0" layoutY="123.0" prefHeight="33.0" prefWidth="159.0" text="K I N D E R  G A R D E N" textFill="#e4bebe">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="328.0" layoutY="27.0" text="R   E   P  O  R  T  S">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="235.0" layoutY="201.0" onAction="#EmployeebtnOnAction" prefHeight="60.0" prefWidth="314.0" style="-fx-border-color: black; -fx-border-radius: 5;" text="E M P L O Y E E   S A L A R Y   " />
+      <JFXButton layoutX="570.0" layoutY="91.0" onAction="#backbtnOnAction" style="-fx-border-color: black; -fx-border-radius: 5;" text="Back" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="462.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

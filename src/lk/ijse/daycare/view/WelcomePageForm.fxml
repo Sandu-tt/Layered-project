@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="604.0" prefWidth="720.0" style="-fx-background-color: #181A20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.daycare.controller.WelcomePageFormController">
+   <children>
+      <Label layoutX="110.0" layoutY="284.0" prefHeight="55.0" prefWidth="378.0" text="K   I   N   D   E   R         G   A   R   D   E  N" textFill="#f2eeee">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="222.0" layoutY="339.0" prefHeight="42.0" prefWidth="359.0" text="D  A  Y      C   A  R  E      S  Y   S  T   E  M" textFill="#fcf7f7">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="488.0" layoutY="514.0" mnemonicParsing="false" onAction="#btnloginOnAction" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #F15A36;" text="Login" textFill="#fceaea" />
+      <ImageView fitHeight="136.0" fitWidth="129.0" layoutX="258.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/logo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

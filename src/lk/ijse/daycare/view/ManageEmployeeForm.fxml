@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="707.0" prefWidth="1275.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.daycare.controller.ManageEmployeeFormController">
+   <children>
+      <JFXButton layoutX="1112.0" layoutY="230.0" onAction="#btnAddCOnAction" prefHeight="40.0" prefWidth="144.0" style="-fx-background-color: #f87a7a;" text="Add Employee" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1112.0" layoutY="389.0" onAction="#SelectallbtnOnAction" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #E0FBFC;" text="Search All">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblemployee" layoutX="21.0" layoutY="455.0" prefHeight="235.0" prefWidth="1243.0">
+         <columns>
+            <TableColumn fx:id="colEno" prefWidth="90.0" text="   E NO" />
+            <TableColumn fx:id="colName" prefWidth="340.9999694824219" text=" Name" />
+            <TableColumn fx:id="colAddress" prefWidth="233.0" text="Address" />
+            <TableColumn fx:id="colContactNo" prefWidth="161.0" text="Contact No" />
+            <TableColumn fx:id="colpossition" prefWidth="151.0" text="possition" />
+            <TableColumn fx:id="colUpdate" prefWidth="131.0" text="view" />
+            <TableColumn fx:id="colDelete" prefWidth="135.0" text="delete" />
+         </columns>
+      </TableView>
+      <Label layoutX="41.0" layoutY="182.0" style="-fx-font-size: 19;" text="E NO">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label layoutX="38.0" layoutY="237.0" style="-fx-font-size: 19;" text="Name" />
+      <Label layoutX="41.0" layoutY="289.0" style="-fx-font-size: 19;" text="Address" />
+      <Label layoutX="37.0" layoutY="340.0" style="-fx-font-size: 19;" text="Contact No" />
+      <Label layoutX="47.0" layoutY="396.0" style="-fx-font-size: 19;" text="possition" />
+      <AnchorPane fx:id="pane2" layoutY="-5.0" prefHeight="146.0" prefWidth="1275.0" style="-fx-background-color: #1A1F2E;">
+         <children>
+            <ImageView fitHeight="112.0" fitWidth="130.0" layoutX="21.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="112.0" layoutY="99.0" prefHeight="33.0" prefWidth="178.0" text="K I N D E R   G A R D E  N" textFill="#e4bebe">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="1202.0" layoutY="147.0" onAction="#backOnAction" text="Back">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1112.0" layoutY="283.0" onAction="#btnUpdateCOnAction" prefHeight="40.0" prefWidth="144.0" style="-fx-background-color: #b76e00;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtENo" layoutX="161.0" layoutY="181.0" prefHeight="31.0" prefWidth="237.0" />
+      <JFXTextField fx:id="txtName" layoutX="161.0" layoutY="236.0" prefHeight="31.0" prefWidth="237.0" />
+      <JFXTextField fx:id="txtAddress" layoutX="161.0" layoutY="289.0" prefHeight="31.0" prefWidth="237.0" />
+      <JFXTextField fx:id="txtContactNo" layoutX="161.0" layoutY="338.0" prefHeight="31.0" prefWidth="237.0" />
+      <JFXTextField fx:id="txtpossition" layoutX="161.0" layoutY="394.0" prefHeight="31.0" prefWidth="237.0" />
+   </children>
+</AnchorPane>
